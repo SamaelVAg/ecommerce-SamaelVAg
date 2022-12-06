@@ -1,8 +1,20 @@
 const btnTheme = document.getElementById( 'theme-btn' )
 const body = document.body
+const navBtnOpen = document.getElementById( 'menu-btn' )
+const navBtnClose = document.getElementById( 'nav-close' )
+const navMenuContainer = document.getElementById( 'nav-container' )
 const cartBtnOpen = document.getElementById( 'cart-btn' )
 const cartBtnClose = document.getElementById ( 'close-cart' )
 const cartContainer = document.getElementById( 'cart-container' )
+const nav = document.querySelector("nav")
+
+window.addEventListener( "scroll", () =>{
+    if(scrollY >= 50){
+        nav.classList.add("scrolled")
+    }else{
+        nav.classList.remove("scrolled")
+    }
+} )
 
 const darkThemeChange = () => {
 
@@ -20,6 +32,10 @@ btnTheme.addEventListener( 'click', () => darkThemeChange())
 cartBtnOpen.addEventListener( 'click', () => cartContainer.classList.remove( 'hide' ) )
 
 cartBtnClose.addEventListener( 'click', () => cartContainer.classList.add( 'hide' ) )
+
+navBtnOpen.addEventListener( 'click', () => navMenuContainer.classList.remove( 'hide' ) )
+
+navBtnClose.addEventListener( 'click', () => navMenuContainer.classList.add( 'hide' ) )
 
 
 const items = [
