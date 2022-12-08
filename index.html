@@ -202,7 +202,7 @@
       <h3 class="cart-title">My Cart</h3>
       
       <div class="cart-content" id="cart-content">
-        <div class="cart-empty hide">
+        <div class="cart-empty">
           <img src="./assets/images/empty-cart.png" alt="">
           <h2>Your car is empty</h2>
           <p>
@@ -212,42 +212,12 @@
           </p>
         </div>
 
-        <article class="cart-item">
-          <div class="item-img">
-            <img src="./assets/images/featured1.png" alt="">
-          </div>
-          <div class="item-desc">
-            <h3>Hoodies</h3>
-            <span class="item-stock">
-              Stock: 10 | 
-              <span class="item-price">
-                $14.00
-              </span>
-            </span>
-            <span class="item-subtotal">
-              Subtotal: $14.00
-            </span>
-            <div class="item-amount-container">
-              <div class="amount-info">
-                <span class="item-minus">
-                  <i class='bx bx-minus' ></i>
-                </span>
-                <span class="item-amount">
-                  1 units
-                </span>
-                <span class="item-plus">
-                  <i class='bx bx-plus' ></i>
-                </span>
-              </div>
-              <i class='bx bx-trash-alt item-trash' ></i>
-            </div>
-          </div>
-        </article>
+        
       </div>
 
       <div class="cart-checkout">
-        <span>0 articles</span>
-        <span>$ 0.00</span>
+        <span id="total-articles">0 articles</span>
+        <span id="total-price">$ 0.00</span>
         <button class="cart-btn-chko" id="cart-btn-chko">
           <i class='bx bxs-check-shield' ></i>
           Checkout
