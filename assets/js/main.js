@@ -336,11 +336,13 @@ document.addEventListener( "DOMContentLoaded", ( ) => {
     if( cart ){
         cart = JSON.parse( cart )
         myCart = cart
-        hideEmpty()
-        defaultCartCont = cartContent.innerHTML
-        cartTotal()
-        cartCard()
-        cardBtns()
+        if( myCart.length > 0 ){
+          hideEmpty()
+          defaultCartCont = cartContent.innerHTML
+          cartTotal()
+          cartCard()
+          cardBtns()
+        }
       }else{
         window.sessionStorage.setItem("cart", JSON.stringify( [] ))
       }
