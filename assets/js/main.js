@@ -7,6 +7,7 @@ document.addEventListener( "DOMContentLoaded", ( ) => {
     const loader = document.getElementById( "loader" )
     setTimeout( () => {
        loader.classList.add( "hide" )
+       window.scrollTo(0, 0)
     }, 2000 )
   }
     
