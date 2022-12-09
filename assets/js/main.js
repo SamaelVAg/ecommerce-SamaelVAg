@@ -367,10 +367,9 @@ document.addEventListener( "DOMContentLoaded", ( ) => {
     window.sessionStorage.setItem( "theme", JSON.stringify( mode ) )
   }
 
+  loadComponent()
   getStorageCart()
   getStorageTheme()
-
-  loadComponent()
 })
 
 
